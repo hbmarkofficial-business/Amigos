@@ -10,57 +10,47 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Kontakt & Termin | The Gentleman's Cut Berlin</title>
+        <title>Kontakt & Termin | Barber Shop & Friseur Aachen</title>
         <meta 
           name="description" 
-          content="Kontaktieren Sie The Gentleman's Cut in Berlin. Vereinbaren Sie Ihren Termin über unseren Chatbot oder rufen Sie uns an. Mo-Fr 09-20 Uhr, Sa 10-18 Uhr." 
+          content="Kontaktieren Sie Barber Shop & Friseur in Aachen. Vereinbaren Sie Ihren Termin über unseren Chatbot oder rufen Sie uns an. Mo-Sa 09-20 Uhr." 
         />
-        <link rel="canonical" href="https://gentlemanscut.de/kontakt" />
+        <link rel="canonical" href="https://viphaircut.de/kontakt" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Barbershop",
-            "@id": "https://example-barbershop.at/#barbershop",
-            "name": "Beispiel Barbershop Wien",
-            "url": "https://example-barbershop.at",
-            "logo": "https://example-barbershop.at/images/logo.png",
-            "image": "https://example-barbershop.at/images/shop.jpg",
-            "telephone": "+43 1 2345678",
+            "@id": "https://viphaircut.de/#barbershop",
+            "name": "Barber Shop & Friseur Aachen",
+            "url": "https://viphaircut.de",
+            "logo": "https://viphaircut.de/images/logo.png",
+            "image": "https://viphaircut.de/images/shop.jpg",
+            "telephone": "+49 241 95783920",
             "priceRange": "€€",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Musterstraße 12",
-              "addressLocality": "Wien",
-              "postalCode": "1020",
-              "addressCountry": "AT"
+              "streetAddress": "Peterstraße 40",
+              "addressLocality": "Aachen",
+              "postalCode": "52062",
+              "addressCountry": "DE"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "48.2167",
-              "longitude": "16.3958"
-            },
-            "areaServed": {
-              "@type": "AdministrativeArea",
-              "name": "Wien"
+              "latitude": "50.7766",
+              "longitude": "6.0834"
             },
             "openingHoursSpecification": [
               {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
                 "opens": "09:00",
-                "closes": "19:00"
-              },
-              {
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": "Saturday",
-                "opens": "09:00",
-                "closes": "17:00"
+                "closes": "20:00"
               }
             ],
             "sameAs": [
-              "https://www.google.com/maps?cid=1234567890",
-              "https://www.instagram.com/beispielbarbershop",
-              "https://www.facebook.com/beispielbarbershop"
+              "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80620.45584515663!2d6.057506539062488!3d50.84247589087447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0996842671873%3A0xe503f2e89b1b12f1!2sAmigos!5e0!3m2!1sde!2sde!4v1770382512915!5m2!1sde!2sde",
+              "https://www.instagram.com/barbershopfriseur",
+              "https://www.facebook.com/barbershopfriseur"
             ]
           })}
         </script>
@@ -96,8 +86,7 @@ const Contact = () => {
         <section className="py-24 bg-charcoal">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-              {/* Reihenfolge für Desktop: Chatbot links, Kontakt rechts
-                  Reihenfolge für Mobile: Chatbot oben, Kontakt unten */}
+              
               <AnimateOnScroll animation="slide-left" className="order-1 lg:order-1">
                 <div className="bg-card border border-border rounded-sm p-8 md:p-10 h-fit">
                   <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
@@ -138,10 +127,10 @@ const Contact = () => {
                       Oder rufen Sie uns direkt an:
                     </p>
                     <a 
-                      href="tel:015118311067" 
+                      href="tel:024195783920" 
                       className="block text-center text-primary font-semibold mt-2 hover:underline"
                     >
-                      015118311067
+                      024195783920
                     </a>
                   </div>
 
@@ -192,8 +181,8 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Adresse</h3>
                         <p className="text-muted-foreground">
-                          Färberstraße 54<br />
-                          90402 Nürnberg
+                          Peterstraße 40<br />
+                          52062 Aachen
                         </p>
                       </div>
                     </div>
@@ -205,10 +194,10 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Telefon</h3>
                         <a 
-                          href="tel:015118311067" 
+                          href="tel:024195783920" 
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          015118311067
+                          024195783920
                         </a>
                       </div>
                     </div>
@@ -220,10 +209,10 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">E-Mail</h3>
                         <a 
-                          href="mailto:info@gentlemanscut.de" 
+                          href="mailto:info@barbershop-friseur.de" 
                           className="text-muted-foreground hover:text-primary transition-colors"
                         >
-                          info@mustershop.de
+                          info@barbershop-friseur.de
                         </a>
                       </div>
                     </div>
@@ -235,8 +224,7 @@ const Contact = () => {
                       <div>
                         <h3 className="font-semibold text-foreground mb-1">Öffnungszeiten</h3>
                         <ul className="text-muted-foreground space-y-1 text-sm">
-                          <li>Mo - Fr: 10:00 - 20:00</li>
-                          <li>Samstag: 10:00 - 19:00</li>
+                          <li>Mo - Sa: 9:00 - 20:00</li>
                           <li>Sonntag: Geschlossen</li>
                         </ul>
                       </div>
@@ -245,14 +233,14 @@ const Contact = () => {
 
                   <div className="aspect-video rounded-sm overflow-hidden border border-border mt-8">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2593.935844488252!2d11.069183276892435!3d49.44792955903806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479f57a835434d4d%3A0xfba938ebd99d6f67!2sTop%20Salon%20-%20N%C3%BCrnberg!5e0!3m2!1sde!2sde!4v1769779552025!5m2!1sde!2sde"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d80620.45584515663!2d6.057506539062488!3d50.84247589087447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c0996842671873%3A0xe503f2e89b1b12f1!2sAmigos!5e0!3m2!1sde!2sde!4v1770382512915!5m2!1sde!2sde"
                       width="100%"
                       height="100%"
                       style={{ border: 0, filter: 'grayscale(100%) contrast(1.2)' }}
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Standort The Gentleman's Cut"
+                      title="Standort Barber Shop & Friseur Aachen"
                     />
                   </div>
                 </div>
